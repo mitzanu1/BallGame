@@ -1,0 +1,122 @@
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.gamebox {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.pad {
+  width: 110px;
+  height: 20px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brick {
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.gameContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom {
+  display: flex;
+}
+
+.buttons {
+  width: 50%;
+  padding-top: 0.5rem;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.score {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.scoreText {
+  margin: 0 1rem 0 0;
+  color: aliceblue;
+  align-self: center;
+}
+
+@keyframes textAnimation {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: rgb(69, 245, 0);
+  }
+  100% {
+    color: red;
+  }
+}
+
+.gameEndText {
+  font-size: 150px;
+  color: red;
+  text-align: center;
+  padding-top: 10%;
+  animation-name: textAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 850px) {
+  .game {
+    width: 400px;
+    height: 200px;
+  }
+  .brick {
+    height: 20px;
+    width: 50px;
+  }
+  .pad {
+    width: 55px;
+    height: 10px;
+  }
+  .ball {
+    width: 20px;
+    height: 20px;
+  }
+  .gameEndText {
+    font-size: 75px;
+  }
+}
