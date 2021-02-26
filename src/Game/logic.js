@@ -11,8 +11,8 @@ export const handleKeyUp = (e) => {
 
 
 const refreshRate = 10
-const ballSpeed = .25
-const padSpeed = .3
+const ballSpeed = 1
+const padSpeed = .6
 
 let gameInterval;
 
@@ -42,7 +42,7 @@ const logic = () => {
     if(x <= 0) actions.set('ball.directionX', 'right')
     if(y >= 85 && x > padX && x < padX + 11) actions.set('ball.directionY','up')
     if(y <= 0) actions.set('ball.directionY', 'down')
-    if(y > 100) {
+    if(y > 90) {
         actions.set('ball.inPlay', false)
         stopGame()
         actions.set('gameState', 'lost')

@@ -1,5 +1,4 @@
 import React from 'react'
-import ball from './Img/ball.png'
 import actions from '../store/actions'
 import { useSelector } from 'react-redux'
 
@@ -15,7 +14,6 @@ const Ball = () => {
     return (
         displayBall && <div className='ball'
                   style={{
-                   backgroundImage: `url(${ball})`,   
                    top:`${y}%`,
                    left:`${x}%`,
                   }}

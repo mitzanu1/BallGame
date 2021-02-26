@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './style.css'
-import background from './Img/background.png'
 import Ball from './Ball'
 import Pad from './Pad'
 import Brick from './Brick'
@@ -22,14 +21,10 @@ function BallGame() {
         stopGame()
         setDefaultValues()
     }
-
+    
     return (
     <div className='gameContainer'>
-        <div className='gamebox'
-             style={{
-                backgroundImage: `url(${background})`
-             }}
-        >
+        <div className='gamebox'>
             <Ball/> 
             <Pad/> 
             <Brick/> 
