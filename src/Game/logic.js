@@ -11,7 +11,7 @@ export const handleKeyUp = (e) => {
 
 
 const refreshRate = 10
-const ballSpeed = 1
+const ballSpeed = .4
 const padSpeed = .6
 
 let gameInterval;

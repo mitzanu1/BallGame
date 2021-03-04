@@ -22,6 +22,8 @@ function BallGame() {
         setDefaultValues()
     }
     
+    const helptext = 'left <-- a || d --> right'
+
     return (
     <div className='gameContainer'>
         <div className='gamebox'>
@@ -33,8 +35,10 @@ function BallGame() {
         <div className='bottom'> 
             <div className='buttons'>
                 <Button size='sm' onClick={startGame}>Start</Button>{' '}
-                <Button size='sm' onClick={stopGame}>Stop</Button>{' '}
                 <Button size='sm' onClick={handleRestart}>Replay</Button>
+            </div>
+            <div className='helpbox'>
+                <p className='helpText'>{helptext}</p>
             </div>
             <div className='score'>
                 <Score/>

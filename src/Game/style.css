@@ -46,6 +46,7 @@
 .gameContainer {
   width: 100%;
   height: 100%;
+  box-shadow: 0 -1px 5px 0px rgb(7, 7, 7);
 }
 
 .bottom {
@@ -53,7 +54,7 @@
 }
 
 .buttons {
-  width: 50%;
+  width: 30%;
   padding-top: 0.5rem;
 }
 
@@ -62,15 +63,27 @@
 }
 
 .score {
-  width: 50%;
+  width: 20%;
   display: flex;
   justify-content: flex-end;
 }
 
 .scoreText {
   margin: 0 1rem 0 0;
-  color: aliceblue;
+  color: black;
   align-self: center;
+}
+
+.helpbox {
+  display: flex;
+  width: 50%;
+}
+
+.helpText {
+  margin: 0 0 0 4rem;
+  color: black;
+  align-self: center;
+  font-weight: 700;
 }
 
 @keyframes textAnimation {
@@ -120,5 +133,14 @@
   }
   .gameEndText {
     font-size: 75px;
+  }
+  .helpText {
+    margin: 0 0 0 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .game {
+    margin-top: 20%;
   }
 }
